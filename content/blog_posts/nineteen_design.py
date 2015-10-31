@@ -4,20 +4,20 @@ import dateutil.parser
 from pydozer import BlogPost
 from slugify import slugify
 
-scalable_tech = BlogPost()
+nineteen_design = BlogPost()
 
 # These are all optional
-scalable_tech.data['author'] = 'Tod Hansmann'
-scalable_tech.data['tags'] = ['tech', 'design', 'architecture', 'opinions']
+nineteen_design.data['author'] = 'Tod Hansmann'
+nineteen_design.data['tags'] = ['tech', 'design', 'architecture', 'opinions']
 
 # These are not optional at all
-scalable_tech.data['posted_date'] = dateutil.parser.parse('Wed Oct 21 14:00:00 MST 2015')
-scalable_tech.data['title'] = '1995 Oriented Design'
-scalable_tech.data['filename'] = slugify(unicode(scalable_tech.data['title']))
-scalable_tech.data['hook'] = """
+nineteen_design.data['posted_date'] = dateutil.parser.parse('Wed Oct 21 14:00:00 MST 2015')
+nineteen_design.data['title'] = '1995 Oriented Design'
+nineteen_design.data['filename'] = slugify(unicode(nineteen_design.data['title']))
+nineteen_design.data['hook'] = """
 <p>We are not designers here at NSC.  We have an artist, but not a web designer of any kind, so how do you design a UI when all you have is really good engineers and no idea what "pretty" is outside your world?</p>
 """
-scalable_tech.data['content'] = """
+nineteen_design.data['content'] = """
 <p>We started making <a href="https://phonejanitor.com">Phone Janitor</a> in June.  We had the idea a long time ago, but it was time to put it into action.  It was simple, give people the ability to make all their annoying calls go away by controlling who could get through to them, and how.</p>
 <p>The only problem is we had (and still have) no idea what makes a pretty UI, and had to start somewhere.  We decided to start by prototyping user interaction flow.  This meant we needed to be able to iterate, have it usable, but we weren't going to be able to do it pretty.  We aren't really web devs by trade, more systems developers.</p>
 <div class="section_header">Introducing the 90s, again for the first time</div>
