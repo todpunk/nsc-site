@@ -1,0 +1,27 @@
+#logo img {
+    background: #fff;
+    width: 1.5em;
+    padding: 4px;
+    height: auto;
+}
+
+.caption {
+    font-style: italic;
+    font-size: .8em;
+    color: #a9a9a9;
+}
+
+.article_img {
+    width: 100%;
+    height: auto;
+}
+
+.tags {
+    font-size: .8em;
+    padding-bottom: 24px;
+}
+
+.section_header {
+    font-size: 1.2em;
+    font-weight: bold;
+}

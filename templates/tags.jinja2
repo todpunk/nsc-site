@@ -1,0 +1,16 @@
+{% extends "menu.jinja2" %}
+{% block title %}Tags in Articles{% endblock %}
+{% block content %}
+ 									<div id="content">
+										<section class="box post">
+										<header class="blog_listing">
+											<h2>Tags in Articles from TnL</h2>
+										</header>
+										{% for tag, posts in tags.iteritems() %}
+											<div class="tag_list_item">
+												<h3><a href="tag_{{ tag.replace(' ', '_') }}1.doz">{{ tag }}: {{ posts|length }} posts</a></h3>
+											</div>
+										{% endfor %}
+ 										</section>
+									</div>
+{% endblock %}

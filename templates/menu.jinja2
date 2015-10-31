@@ -1,0 +1,22 @@
+{% if child_is_page == True %}
+{% extends "base_page.jinja2" %}
+{% else %}
+{% extends "base_blog.jinja2" %}
+{% endif %}
+{% block menu %}
+									<!-- Nav -->
+										<nav id="nav">
+											<ul>
+												<li><a href="/">Home</a></li>
+												<li>
+													<a href="#">Our Products</a>
+													<ul>
+														<li><a href="https://phonejanitor.com/?origin_tag=nscsite">Phone Janitor</a></li>
+														<li><a href="#">Mystery Project</a></li>
+													</ul>
+												</li>
+												<li><a href="/about.doz">About</a></li>
+												<li><a href="/nscblog/listing1.doz">NSC Blog</a></li>
+											</ul>
+										</nav>
+{% endblock %}
